@@ -9,8 +9,8 @@ uniform mat4 transformMatrix;
 void main()
 {
 	//Uncomment if you want to see the basic cube translated.
-    gl_Position = transformMatrix*vPosition;
+    	gl_Position = transformMatrix*vPosition;
 
 	//gl_Position = vPosition;
-    color = vColor;
+   	 color = vColor;
 }
