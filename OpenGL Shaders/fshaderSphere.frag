@@ -72,7 +72,7 @@ void main()
 		float sCoe =  pow(max(dot(fNormal.xyz,lh[i].halfwayVector), 0.0),modelMaterial.shininess);
 		vec4 specular =  sCoe *lightSources[i].intensity * lightSources[i].specular * modelMaterial.specular * attenuation; 
 		
-	    if(dot(lh[i].lightDirection, fNormal) < 0.0)
+	    	if(dot(lh[i].lightDirection, fNormal) < 0.0)
 		  specular = vec4(0.0, 0.0, 0.0, 1.0);   
 	
 		
