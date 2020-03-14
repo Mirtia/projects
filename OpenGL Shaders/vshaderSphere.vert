@@ -65,7 +65,7 @@ void main()
 						
 			vec3 fPosition = vec3(( modelMatrix * vec4(vPosition.xyz,1.0)).xyz);
 			
-		    vec3 lPosition = vec3(( modelLightMatrix * vec4(lightSources[i].position.xyz,1.0)).xyz);
+		   	vec3 lPosition = vec3(( modelLightMatrix * vec4(lightSources[i].position.xyz,1.0)).xyz);
 			
 			lh[i].halfwayVector = normalize( lPosition + fPosition );
 			
