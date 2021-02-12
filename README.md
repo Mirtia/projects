@@ -1,2 +1,2 @@
 # projects
-This repo contains school projects.
+This repo contains university projects.
