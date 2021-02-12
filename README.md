@@ -1,2 +1,2 @@
 # projects
-Those are some of the school projects I have done. 
+This repo contains school projects.
