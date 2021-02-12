@@ -48,8 +48,7 @@ void main()
 	vec4  sum = vec4(0.0, 0.0, 0.0, 0.0);
 	
 	for( int i=0; i < maxLights ; i++ )
-	{				
-		
+	{						
 		float dist = length(lh[i].lightDirection);
 		float attenuation = 1.0 / (lightSources[i].constantAttenuation 
 				+ lightSources[i].linearAttenuation * dist + lightSources[i].quadraticAttenuation * (dist * dist));    
@@ -74,12 +73,7 @@ void main()
 		
 		sum = ambient + diffuse + specular ;
 		addition += vec4(sum.xyz, 1.0);
-
-	}
-		
-	    colorOUT = vec4(addition.xyz, 1.0);
-	
-
-
+	}		
+	colorOUT = vec4(addition.xyz, 1.0);	
 }
 
